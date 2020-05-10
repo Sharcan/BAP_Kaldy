@@ -27,9 +27,7 @@ add_theme_support('post-thumbnails');
 
 // Register menus
 register_nav_menus(
-    array(
-        'top-menu' => 'Top Menu',
-    )
+
 );
 
 

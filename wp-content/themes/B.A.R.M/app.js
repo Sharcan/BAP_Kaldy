@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\kaldy\src\app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\kaldy\src\app.scss */"./src/app.scss");
+__webpack_require__(/*! D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\src\app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\src\app.scss */"./src/app.scss");
 
 
 /***/ })
