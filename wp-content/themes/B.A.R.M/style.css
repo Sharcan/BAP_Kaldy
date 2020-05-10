@@ -3,6 +3,91 @@ Theme Name: B.A.R.M
 Author: Nicolas
 */
 
-header{
-    background-color: aqua;
+
+
+/*
+*************
+*************
+Front PAGE
+*************
+*************
+*/
+
+.header-front{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+.logo{
+    width: 55px;
+} 
+
+
+#navbarNav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container-fluid{
+    padding: 0;
+    background-image: url("images/smile.jpg");
+    background-size: cover;
+}
+
+
+.topPage{
+    width: 100%;
+    height: calc(100vh - 110px);
+    
+    background-color: #5554546b;
+    
+}
+
+.topPage .titleTop{
+    text-align: center;
+    padding-top: 15%;
+
+    color: white;
+
+}
+
+.titleTop h1{
+    font-size: 100px !important; 
+}
+
+.phraseMid{
+    width: 75%;
+    margin: auto;
+    padding-top: 3%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+.buttonBot{
+    text-align: center;
+}
+
+.buttonBot button{
+    border: 0;
+    background-color: #0090CF;
+    padding: 15px;
+    color: white;
+
+    margin-top: 3%;
+
+    transition: 0.75s;
+
+}
+
+.buttonBot button:hover{
+    background-color: white;
+    color: #0090CF;
+
+    transition: 0.75s;
 }
