@@ -29,7 +29,8 @@ add_theme_support('custom-header');
 // Register menus
 register_nav_menus(
     array(
-        'top-menu' => 'Top Menu'
+        'top-menu' => 'Top Menu',
+        'footer-menu' => 'Footer Menu'
     )
 );
 
