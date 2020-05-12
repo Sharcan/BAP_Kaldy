@@ -8,12 +8,38 @@
 
     <?php wp_head(); ?>
 </head>
-<body <?php body_class('test') ?>>
+<body <?php body_class(''); ?>>
     
 <header>
-    <div class="container-fluid">
 
-        <h1>header</h1>
 
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="#" class="navbar-brand">
+            <img src="<?php bloginfo('template_directory')?>/images/logo.jpg" alt="Logo RK" class="img-fluid logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <?php 
+
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'top-menu',
+
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id' => 'navbarNav',
+
+                        'menu_class' => 'navbar-nav ml-auto px-3',
+
+                        
+                    )
+                )
+
+            ?>
+
+    </nav>
+
+
 </header>

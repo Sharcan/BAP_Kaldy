@@ -1,6 +1,37 @@
 
     <footer>
         
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="titleFooter footerLeft">
+                        Infos Pratiques
+                    </p>
+                    <?php 
+
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'footer-menu',
+
+                                'menu_class' => 'menuFooter'
+                            )
+                        )
+
+                    ?>
+                </div>
+                <div class="col-lg-6">
+                    <p class="titleFooter footerRight">
+                        Suivez-Nous
+                    </p>
+                    <div class="logoList d-flex flex-row justify-content-around">
+                        <div class="logo"></div>
+                        <div class="logo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </footer>
 
 
