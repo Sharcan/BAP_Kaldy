@@ -1,4 +1,4 @@
-<?php get_header('front'); ?>
+<?php get_header(''); ?>
 
 <section id="imgTop">
     <div class="container-fluid containerTopPage">

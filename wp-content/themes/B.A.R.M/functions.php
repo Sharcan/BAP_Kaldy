@@ -37,3 +37,11 @@ register_nav_menus(
 
 //Add image sizes
 add_image_size('post_image', 1100, 750, true);
+
+
+// Add woocommerce for BARM Theme Support
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );

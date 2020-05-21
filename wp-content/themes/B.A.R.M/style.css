@@ -17,13 +17,11 @@ HEADER
 */
 
 .header-front{
-    margin: 0;
-    padding: 0;
-    background-color: red;
+    background-color: #E9F6FE;
 }
 
 .logo{
-    width: 55px;
+    width: 10px;
 } 
 
 
