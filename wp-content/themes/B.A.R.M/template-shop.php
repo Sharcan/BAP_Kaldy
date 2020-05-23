@@ -7,7 +7,7 @@ Template Name: Shop Page
 
 get_header(); ?>
 
-<div class="container">
+<div class="container woocommerceContent pageContent">
 
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 

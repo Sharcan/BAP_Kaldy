@@ -150,6 +150,11 @@ SECTION imgTop
 
 }
 
+.buttonBot button a{
+    color: white;
+    text-decoration: none;
+}
+
 .buttonBot button:hover{
     
     background-color: white;
@@ -158,7 +163,10 @@ SECTION imgTop
     transition: 0.75s;
 }
 
-
+.buttonBot button a:hover{
+    color: #0090CF;
+    text-decoration: none;
+}
 /*
 ********
 SECTION biographieMid
@@ -258,6 +266,177 @@ SECTION newVideo
 
 .buttonNew button:hover{
     
+    background-color: white;
+    color: #0090CF;
+
+    transition: 0.75s;
+}
+
+
+/*
+********
+WooCommerce CONTENT
+********
+*/
+
+.woocommerceContent{
+    margin: 5% 0;
+}
+
+
+/*
+********
+Page CONTENT
+********
+*/
+
+.pageContent{
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+
+/*
+********
+Page Checkout
+********
+*/
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cartContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 75%;
+
+}
+
+.productDetails{
+
+    border-top: 2px solid black;
+
+    /* background-color: blue; */
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.productImage{
+    width: 25%;
+}
+
+.productDescription{
+    width: 45%;
+    padding: 2%;
+}
+
+.productName{
+    font-size:30px;
+}
+.productName a{
+    color: black;
+    text-decoration: none;
+    padding: 1%;
+}
+
+.productDesc p {
+    font-size: 15px;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.productPrice{
+    width: 30%;
+    padding: 3%;
+    text-align: right;
+}
+
+.productPrice p{
+
+    font-size: 30px;
+
+}
+
+.productDelete{
+    margin-top: 5%;
+}
+.productDelete a{
+    color: red;
+    text-decoration: none;
+}
+
+
+.cartAction{
+    margin-top: 2%;
+    padding: 2%;
+    border-top: 2px solid black;
+}
+
+.couponBtn{
+    border: 0;
+    background-color: #0090CF;
+    padding: 15px;
+    color: white;
+    
+
+    transition: 0.75s;
+
+    outline: none;
+}
+.couponBtn:hover{
+    
+    background-color: white;
+    color: #0090CF;
+
+    transition: 0.75s;
+}
+
+.cartPayement{
+    width: 250px;
+    height: 250px;
+    border: 1.5px solid #0090CF;
+    position: sticky;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.totalCart{
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 2%;
+}
+
+.checkoutBtn{
+    width: 100%;
+    border: 0;
+    background-color: #0090CF;
+    padding: 15px;
+    color: white;
+
+    transition: 0.75s;
+
+    outline: none;
+    text-align: center;
+
+}
+
+.checkoutBtn:hover{
+    text-decoration: none;
     background-color: white;
     color: #0090CF;
 

@@ -45,3 +45,25 @@ function mytheme_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+
+
+// // CHANGE PRODUCT IMAGE
+// function custom_new_product_image($a) {
+
+//     $class = 'attachment-shop_thumbnail wp-post-image'; // Default cart thumbnail class.
+//     $src = [PATH_TO_YOUR_NEW_IMAGE];
+
+//     // Construct your img tag.
+//     $a = '<img';
+//     $a .= ' src="' . $src . '"';
+//     $a .= ' class="' . $class . '"';
+//     $a .= 'width=150';
+//     $a .= ' />';
+
+//     // Output.
+//     return $a;
+
+// }
+
+// add_filter( 'woocommerce_cart_item_thumbnail', 'custom_new_product_image' );

@@ -1,0 +1,44 @@
+2020-05-23T13:19:04+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\cart\cart.php:61
+Stack trace:
+#0 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(251): include()
+#1 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\wamp64\www\A2\BAP_Kaldy\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\wamp64\www\A2\BAP_Kaldy\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\wamp64\www\A2\BAP_K dans D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\cart\cart.php à la ligne 61
+
+2020-05-23T13:26:12+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_content() in D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\cart\cart.php:71
+Stack trace:
+#0 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(251): include()
+#1 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\wamp64\www\A2\BAP_Kaldy\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\wamp64\www\A2\BAP_Kaldy\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\wamp64 dans D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\cart\cart.php à la ligne 71
+
+2020-05-23T13:27:19+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_content() in D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\cart\cart.php:73
+Stack trace:
+#0 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(251): include()
+#1 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\wamp64\www\A2\BAP_Kaldy\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\wamp64\www\A2\BAP_Kaldy\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\wamp64 dans D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\cart\cart.php à la ligne 73
+
+2020-05-23T13:27:52+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_content() in D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\cart\cart.php:73
+Stack trace:
+#0 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(251): include()
+#1 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\wamp64\www\A2\BAP_Kaldy\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\wamp64\www\A2\BAP_Kaldy\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\wamp64\www\A2\BAP_Kaldy\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\wamp64 dans D:\wamp64\www\A2\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\cart\cart.php à la ligne 73
+
