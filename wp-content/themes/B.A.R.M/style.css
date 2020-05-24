@@ -300,7 +300,7 @@ Page CONTENT
 
 /*
 ********
-Page Checkout
+Page Cart
 ********
 */
 
@@ -436,6 +436,65 @@ Page Checkout
 }
 
 .checkoutBtn:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #0090CF;
+
+    transition: 0.75s;
+}
+
+
+
+/*
+********
+Page Checkout
+********
+*/
+
+.billingForm{
+    
+    padding: 2%;
+    border: 1px solid #0090CF;
+    background-color: #E9F6FE;
+    border-radius: 10px;
+
+
+}
+
+.woocommerce-input-wrapper{
+    width: 100%;
+    display: block;
+}
+
+.paymentForm{
+    background-color: transparent !important;
+}
+
+.topPayment{
+    text-align: right;
+}
+
+.totalHtml{
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+
+.btnPayment{
+    border: 0;
+    background-color: #0090CF;
+    padding: 15px;
+    color: white;
+    
+
+    transition: 0.75s;
+
+    outline: none;
+
+}
+
+.btnPayment:hover{
     text-decoration: none;
     background-color: white;
     color: #0090CF;

@@ -18,7 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="woocommerce-billing-fields">
+<div class="woocommerce-billing-fields billingForm">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
 		<h3><?php esc_html_e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
@@ -31,9 +31,11 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
 
-	<div class="woocommerce-billing-fields__field-wrapper">
+	<div class="form-group">
 		<?php
 		$fields = $checkout->get_checkout_fields( 'billing' );
+
+		// var_dump($fields);
 
 		foreach ( $fields as $key => $field ) {
 			woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
