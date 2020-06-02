@@ -13,7 +13,7 @@
 <header>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark header-front">
         <a href="#" class="navbar-brand">
             <img src="<?php bloginfo('template_directory')?>/images/logo.jpg" alt="Logo RK" class="img-fluid logo">
         </a>
