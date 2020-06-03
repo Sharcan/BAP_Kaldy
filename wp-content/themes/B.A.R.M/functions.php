@@ -1,4 +1,8 @@
 <?php
+add_action( 'woocommerce_before_shop_loop', 'barm_forma');
+function barm_forma(){
+    echo'<center><h2>Acheter une formation</h2></center>';
+}
 
 
 function load_stylesheets()
@@ -36,7 +40,7 @@ register_nav_menus(
 
 
 //Add image sizes
-add_image_size('post_image', 1100, 750, true);
+add_image_size('post_image', 1100, 550, false);
 
 
 // Add woocommerce for BARM Theme Support
@@ -46,7 +50,17 @@ function mytheme_add_woocommerce_support() {
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
+//add a widget
 
+register_sidebar(
+    array(
+        'name'=>'categories sidebar',
+        'id'=>'categories-sidebar',
+        'class'=>'',
+        'before_title'=> '<h4>',
+        'after_title'=>'</h4>',
+    )
+    );
 
 // // CHANGE PRODUCT IMAGE
 // function custom_new_product_image($a) {

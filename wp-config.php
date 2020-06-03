@@ -2,61 +2,65 @@
 /**
  * La configuration de base de votre installation WordPress.
  *
- * Ce fichier contient les réglages de configuration suivants : réglages MySQL,
- * préfixe de table, clés secrètes, langue utilisée, et ABSPATH.
- * Vous pouvez en savoir plus à leur sujet en allant sur
- * {@link http://codex.wordpress.org/fr:Modifier_wp-config.php Modifier
- * wp-config.php}. C’est votre hébergeur qui doit vous donner vos
- * codes MySQL.
- *
  * Ce fichier est utilisé par le script de création de wp-config.php pendant
  * le processus d’installation. Vous n’avez pas à utiliser le site web, vous
- * pouvez simplement renommer ce fichier en "wp-config.php" et remplir les
+ * pouvez simplement renommer ce fichier en « wp-config.php » et remplir les
  * valeurs.
+ *
+ * Ce fichier contient les réglages de configuration suivants :
+ *
+ * Réglages MySQL
+ * Préfixe de table
+ * Clés secrètes
+ * Langue utilisée
+ * ABSPATH
+ *
+ * @link https://fr.wordpress.org/support/article/editing-wp-config-php/.
  *
  * @package WordPress
  */
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'bap_kaldy');
+define( 'DB_NAME', 'bap_kaldy' );
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'root');
+define( 'DB_USER', 'root' );
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', '');
+define( 'DB_PASSWORD', '' );
 
 /** Adresse de l’hébergement MySQL. */
-define('DB_HOST', 'localhost:3306');
+define( 'DB_HOST', 'localhost' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
-define('DB_CHARSET', 'utf8');
+define( 'DB_CHARSET', 'utf8mb4' );
 
-/** Type de collation de la base de données.
-  * N’y touchez que si vous savez ce que vous faites.
-  */
-define('DB_COLLATE', '');
+/**
+ * Type de collation de la base de données.
+ * N’y touchez que si vous savez ce que vous faites.
+ */
+define( 'DB_COLLATE', '' );
 
 /**#@+
  * Clés uniques d’authentification et salage.
  *
  * Remplacez les valeurs par défaut par des phrases uniques !
  * Vous pouvez générer des phrases aléatoires en utilisant
- * {@link https://api.wordpress.org/secret-key/1.1/salt/ le service de clefs secrètes de WordPress.org}.
+ * {@link https://api.wordpress.org/secret-key/1.1/salt/ le service de clés secrètes de WordPress.org}.
  * Vous pouvez modifier ces phrases à n’importe quel moment, afin d’invalider tous les cookies existants.
  * Cela forcera également tous les utilisateurs à se reconnecter.
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         's|QcBy+!n0!@;*^b@T2fn*aS:XtAHdCtzQ&V6#GP.2U`_Ub9<^!*CP?hw3j:Kc &');
-define('SECURE_AUTH_KEY',  ')a%05.-h7>1nFp5a%h^{2%~c` 8<MBsfJ`k(!/F95sRsQJ2QvS&ZQ&=**x|jFV|e');
-define('LOGGED_IN_KEY',    '-+amc,ubh wA}pAP?GaC5~C7n_R#s*/O!X?Gt%G9j-%+Yv+2Fa=x|!fz4,A+^8K/');
-define('NONCE_KEY',        '{2<P: ;nd~Q(?tvc]$m[-|^_Hs/@%y]Hv*`&ZU-*_k4JkM|?K9)Z6bJ+?c}v|&{B');
-define('AUTH_SALT',        ' y<gF?2l`o]O11h:8*PoE8+$Y03}_lH)bI2RRZaLw0eqTHWhvOYINspeFp|gx84$');
-define('SECURE_AUTH_SALT', '|AhMQ8PuzQje_o|r!~wPo5Jwr`rtD9_BAUmq!r3pj/r^jAudT6-0xEPYRrmhsw.d');
-define('LOGGED_IN_SALT',   '_;vA|j-Q^LB[rQ;34Q$z#Z9zAXm(>2NYz[T[F_[[1Hp{~JkV|qlP%ak{trSg87N/');
-define('NONCE_SALT',       '(rPm!<+Rc43sn4}t|,p|px-N4;$%gm.&Bk%{Z0VEcU@p[5r/df69?YF%Hp[k*R&;');
+define( 'AUTH_KEY',         'gSQ#r>@Sj5;EY ai6LzO`bh8mqb~t*YsRBGDpFB*0etT;<<oyJ:5mX6[G{r0eeM1' );
+define( 'SECURE_AUTH_KEY',  '*fJzt}0tnArV@xOo&q4%<9j$nVJYoNn0!}WVA)FlsL, UYQ%8;}@$|2m209.?QaL' );
+define( 'LOGGED_IN_KEY',    ']4UY_@L34c2hW~A0a!F;&F!G=|fRpc% H3SxpRQGAkKZynd 0LPEwV8N0LcR{8yJ' );
+define( 'NONCE_KEY',        'h<hkJ*J]fWLmbP<p[;w`CJn( +,g*$3IxNjPu3:T>F$QF|}U{wg/d**Ua`RI2W0_' );
+define( 'AUTH_SALT',        'n}J3/V&$b*IeRblBBv!AVoYdN@nQ`o>v@mn_FbF&Op%>W{L?0ChpwzXA-Su5s@3D' );
+define( 'SECURE_AUTH_SALT', 'SuUEz%9m:7p^|NlKuInk2)=fL##f7t1}3l<kRRE7j0m()NP9 QYBNxC$Qa/HK,Si' );
+define( 'LOGGED_IN_SALT',   'O+xL{Ta`._E5?N*Zm _y&7uV:YJNrheFJwH>__>%&rO%q]X$RP8i!bdLQHNF0)LU' );
+define( 'NONCE_SALT',       'k+ArL~M!W^Eh]40~`TX5i|iz^tg8=n.qdPXF]o=J[0@%StbNwbUwr{xn2xw))l*s' );
 /**#@-*/
 
 /**
@@ -80,15 +84,15 @@ $table_prefix = 'wp_';
  * Pour plus d’information sur les autres constantes qui peuvent être utilisées
  * pour le déboguage, rendez-vous sur le Codex.
  *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
+ * @link https://fr.wordpress.org/support/article/debugging-in-wordpress/
  */
-define('WP_DEBUG', false);
+define( 'WP_DEBUG', false );
 
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 
 /** Chemin absolu vers le dossier de WordPress. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+if ( ! defined( 'ABSPATH' ) )
+  define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
-require_once(ABSPATH . 'wp-settings.php');
+require_once( ABSPATH . 'wp-settings.php' );
