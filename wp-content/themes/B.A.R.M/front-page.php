@@ -14,7 +14,7 @@
             </div>
 
             <div class="buttonBot">
-                <button>Acheter une formation</button>
+                <button onclick="location.href='<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>';">Acheter une formation</button>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@
     </div>
 
     <div class="buttonNew">
-        <button>Voir toutes les formations</button>
+        <button onclick="location.href='<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>';">Voir toutes les formations</button>
     </div>
 </section>
 

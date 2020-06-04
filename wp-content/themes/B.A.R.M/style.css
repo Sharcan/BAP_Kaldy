@@ -75,7 +75,6 @@ footer .menuFooter{
 }
 
 .logo{
-    background-color: red;
     width: 75px;
     height: 75px;
 }
@@ -329,6 +328,7 @@ Page Cart
     flex-direction: row;
 
     width: 100%;
+    padding: 2% 0;
 }
 
 .productImage{

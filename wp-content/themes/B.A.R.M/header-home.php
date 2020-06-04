@@ -14,7 +14,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <a href="#" class="navbar-brand">
-            <img src="<?php bloginfo('template_directory')?>/images/logo.jpg" alt="Logo RK" class="img-fluid logo">
+            <img src="<?php bloginfo('template_directory')?>/images/logo.png" alt="Logo RK" class="img-fluid logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
