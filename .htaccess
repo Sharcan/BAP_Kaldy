@@ -5,11 +5,11 @@
 # Toute modification des directives entre ces marqueurs sera outrepassée.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /BAP_kaldy/
+RewriteBase /A2/BAP_Kaldy/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /BAP_kaldy/index.php [L]
+RewriteRule . /A2/BAP_Kaldy/index.php [L]
 </IfModule>
 
 # END WordPress

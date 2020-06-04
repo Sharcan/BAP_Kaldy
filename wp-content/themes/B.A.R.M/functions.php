@@ -60,24 +60,13 @@ register_sidebar(
         'before_title'=> '<h4>',
         'after_title'=>'</h4>',
     )
-    );
+);
 
-// // CHANGE PRODUCT IMAGE
-// function custom_new_product_image($a) {
 
-//     $class = 'attachment-shop_thumbnail wp-post-image'; // Default cart thumbnail class.
-//     $src = [PATH_TO_YOUR_NEW_IMAGE];
+// Custom add_actions
 
-//     // Construct your img tag.
-//     $a = '<img';
-//     $a .= ' src="' . $src . '"';
-//     $a .= ' class="' . $class . '"';
-//     $a .= 'width=150';
-//     $a .= ' />';
-
-//     // Output.
-//     return $a;
-
+// function test(){
+//     echo '<div class="qty">Quantity: </div>';
 // }
 
-// add_filter( 'woocommerce_cart_item_thumbnail', 'custom_new_product_image' );
+// add_action('woocommerce_before_add_to_cart_quantity', 'test', 10);
