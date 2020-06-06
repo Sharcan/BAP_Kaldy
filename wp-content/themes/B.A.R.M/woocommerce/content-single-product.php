@@ -30,47 +30,74 @@ if ( post_password_required() ) {
 	echo get_the_password_form(); // WPCS: XSS ok.
 	return;
 }
+
+
+if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
+	return;
+}
+
+global $product;
+
+$columns           = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
+$post_thumbnail_id = $product->get_image_id();
+$wrapper_classes   = apply_filters(
+	'woocommerce_single_product_image_gallery_classes',
+	array(
+		'woocommerce-product-gallery',
+		'woocommerce-product-gallery--' . ( $product->get_image_id() ? 'with-images' : 'without-images' ),
+		'woocommerce-product-gallery--columns-' . absint( $columns ),
+		'images',
+	)
+);
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
-	<?php
-	/**
-	 * Hook: woocommerce_before_single_product_summary.
-	 *
-	 * @hooked woocommerce_show_product_sale_flash - 10
-	 * @hooked woocommerce_show_product_images - 20
-	 */
-	do_action( 'woocommerce_before_single_product_summary' );
-	?>
+<div class="singleProductContent">
 
-	<div class="summary entry-summary">
-		<?php
-		/**
-		 * Hook: woocommerce_single_product_summary.
-		 *
-		 * @hooked woocommerce_template_single_title - 5
-		 * @hooked woocommerce_template_single_rating - 10
-		 * @hooked woocommerce_template_single_price - 10
-		 * @hooked woocommerce_template_single_excerpt - 20
-		 * @hooked woocommerce_template_single_add_to_cart - 30
-		 * @hooked woocommerce_template_single_meta - 40
-		 * @hooked woocommerce_template_single_sharing - 50
-		 * @hooked WC_Structured_Data::generate_product_data() - 60
-		 */
-		do_action( 'woocommerce_single_product_summary' );
+    <div class="topImg">
+        <?php
+            // if ( $product->get_image_id() ) {
+            //     $html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+            // } else {
+            //     $html .= sprintf( '<img src="%s" alt="%s" class="" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+            // }
+
+            // echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+
+            // do_action( 'woocommerce_product_thumbnails' );
 		?>
-	</div>
+    </div>
+    
+    
+    <?php the_title( '<h1 class="text-center titleTop">', '</h1>' ); ?>
 
-	<?php
-	/**
-	 * Hook: woocommerce_after_single_product_summary.
-	 *
-	 * @hooked woocommerce_output_product_data_tabs - 10
-	 * @hooked woocommerce_upsell_display - 15
-	 * @hooked woocommerce_output_related_products - 20
-	 */
-	do_action( 'woocommerce_after_single_product_summary' );
-	?>
+    <div class="text-center pb-1 mx-5">
+	    <?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
+    </div>
+
+
+    <div class="middleProduct mx-5">
+        
+        <h1 class="text-center titleTop">Informations complémentaires</h1>
+
+        <div class="detailsProduct">
+            <div class="nbDocument pl-5">Nombres de documents : <?php echo $product->get_virtual(); ?></div>
+
+            <div class="priceProduct pr-5">Prix: <?php echo $product->get_price_html(); ?></div>
+        </div>
+
+        <div class="addToCartDiv">
+
+            <?php do_action( 'woocommerce_single_product_summary' ); ?>
+        
+        </div>
+    </div>
+
+    <div class="bottomProduct">
+
+    <h1 class="text-center titleTop">Quelques Avis</h1>
+
+        <?php //do_action( 'woocommerce_after_single_product_summary' ); ?>
+
+    </div>
+
 </div>
-
-<?php do_action( 'woocommerce_after_single_product' ); ?>

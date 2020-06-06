@@ -1,4 +1,15 @@
-<?php get_header(''); ?>
+<?php 
+
+    if(is_front_page()){
+        get_template_part('header-home');
+    }
+    else {
+        get_header(''); 
+    }
+
+?>
+
+    
 
 <section id="imgTop">
     <div class="container-fluid containerTopPage">

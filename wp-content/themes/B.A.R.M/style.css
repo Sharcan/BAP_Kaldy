@@ -588,3 +588,92 @@ Page Account - DASHBOARD
     padding: 0 1%;
 
 }
+
+
+
+
+
+/*
+********
+Page Single Product
+********
+*/
+
+.singleProductContent{
+    padding: 0;
+    margin: 0;
+}
+
+.singleProductContent .topImg{
+    text-align: center;
+    height: 30vh;
+    overflow: hidden;
+    background-image: url("images/exemple_miniature.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singleProductContent .titleTop{
+    margin: 2% 0;
+}
+
+.singleProductContent .middleProduct{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.singleProductContent div{
+    margin: 1% 0;
+}
+
+.singleProductContent .detailsProduct{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+}
+
+
+.singleProductContent .addToCartDiv{
+
+    width: 100%;
+    text-align: right;
+
+
+}
+
+.singleProductContent .addToCart{
+    /* display: inline-block; */
+    border: 0;
+    background-color: #0090CF;
+    padding: 15px;
+    color: white;
+    
+
+    transition: 0.75s;
+
+    outline: none;
+
+    margin-right: 3%;
+}
+.singleProductContent .addToCart:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #0090CF;
+
+    transition: 0.75s;
+}
+
+.singleProductContent .quantity{
+    margin-left: 3%;
+}
+
+.singleProductContent .screen-reader-text{
+    color: black
+}
+
+.singleProductContent .input-text.qty{
+    border: 1px solid #0090CF;
+}
+

@@ -1,0 +1,14 @@
+2020-06-03T12:32:34+00:00 CRITICAL syntax error, unexpected 'add_theme_support' (T_STRING) dans C:\xampp\htdocs\BAP_Kaldy\wp-content\themes\B.A.R.M\functions.php à la ligne 13
+
+2020-06-03T13:59:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_categoriessidebar() in C:\xampp\htdocs\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\content-product.php:32
+Stack trace:
+#0 C:\xampp\htdocs\BAP_Kaldy\wp-includes\template.php(725): require()
+#1 C:\xampp\htdocs\BAP_Kaldy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(197): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\BAP_Kaldy\wp-content\plugins\woocommerce\includes\wc-template-functions.php(958): wc_get_template_part('content', 'product')
+#3 C:\xampp\htdocs\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce.php(9): woocommerce_content()
+#4 C:\xampp\htdocs\BAP_Kaldy\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\BAP_Kaldy\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\BAP_Kaldy\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown dans C:\xampp\htdocs\BAP_Kaldy\wp-content\themes\B.A.R.M\woocommerce\content-product.php à la ligne 32
+
