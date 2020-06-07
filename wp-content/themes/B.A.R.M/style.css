@@ -677,3 +677,12 @@ Page Single Product
     border: 1px solid #0090CF;
 }
 
+
+
+ul.product-categories{
+    background-color: #E5F0FA;
+        border: 2px solid #C0F0FA;
+    -webkit-box-shadow: 0px 1px 20px -10px rgba(0,0,0,0.57);
+}
+
+ul.product-categories li{margin-top: 10px; margin-bottom: 10px;}
